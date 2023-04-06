@@ -15,4 +15,9 @@ Rails.application.routes.draw do
                registrations: 'api/v1/registrations'
              }
 
+  namespace :api do
+    namespace :v1 do
+      resources :ip_addresses, only: [:create, :index]
+    end
+  end
 end

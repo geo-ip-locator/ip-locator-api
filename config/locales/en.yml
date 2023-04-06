@@ -31,3 +31,13 @@
 
 en:
   hello: "Hello world"
+
+  api:
+    v1:
+      registrations:
+        success: "Signed up successfully."
+
+      sessions:
+        success: "Logged in successfully."
+        logged_out: "Logged out successfully."
+        failure: "Email or Password is invalid."
