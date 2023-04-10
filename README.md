@@ -1,24 +1,53 @@
-# README
+# IpLocator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Application for
+
+* Github Link
+  * https://github.com/geo-ip-locator/ip-locator-api
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version : 3.2.2
+
+* Rails version : 7.0.4.3
+
+* Bundler version : 2.4.10
+
+* postgresql(psql) version : 15.2
 
 * System dependencies
+  * Devise gem
+  * jquery-rails gem
+  * dotenv-rails gem
+  * pg gem
+  * i18n gem
+  * rspec-rails gem
+  * factory_bot_rails gem
+  * faker gem
+  * database_cleaner gem
+  * shoulda-callback-matchers gem
+  * shoulda-matchers gem
 
 * Configuration
+  * Create .env file from .env.template
 
-* Database creation
+        $ cp .env.template .env
 
-* Database initialization
+* Database creation & initialization
+  * Create and migrate database
 
-* How to run the test suite
+        $ rails db:create db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+* How to run the project
+  * Clone project
 
-* Deployment instructions
+        $ git clone https://github.com/geo-ip-locator/ip-locator-api.git
+  * Reset Database
 
-* ...
+        $ rake db:reset
+  * Install dependencies
+
+        $ bundle install
+  * Start server
+
+        $ rails s
